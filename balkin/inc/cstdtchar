@@ -1,0 +1,32 @@
+// cstdio standard header
+#pragma once
+#ifndef _CSTDTCHAR_
+#define _CSTDTCHAR_
+
+#if defined(ALT_TCHAR_H_)
+#include <stdtchar.h>
+#endif
+
+#include <fstream>
+
+namespace std
+{
+	typedef basic_string<TCHAR, char_traits<TCHAR>, allocator<TCHAR> > tstring;
+	typedef basic_ios<TCHAR, char_traits<TCHAR> > tios;
+	typedef basic_streambuf<TCHAR, char_traits<TCHAR> > tstreambuf;
+	typedef basic_istream<TCHAR, char_traits<TCHAR> > tistream;
+	typedef basic_ostream<TCHAR, char_traits<TCHAR> > tostream;
+	typedef basic_iostream<TCHAR, char_traits<TCHAR> > tiostream;
+	typedef basic_stringbuf<TCHAR, char_traits<TCHAR>, allocator<TCHAR> > tstringbuf;
+	typedef basic_istringstream<TCHAR, char_traits<TCHAR>, allocator<TCHAR> > tistringstream;
+	typedef basic_ostringstream<TCHAR, char_traits<TCHAR>, allocator<TCHAR> > tostringstream;
+	typedef basic_stringstream<TCHAR, char_traits<TCHAR>, allocator<TCHAR> > tstringstream;
+	typedef basic_filebuf<TCHAR, char_traits<TCHAR> > tfilebuf;
+	typedef basic_ifstream<TCHAR, char_traits<TCHAR> > tifstream;
+	typedef basic_ofstream<TCHAR, char_traits<TCHAR> > tofstream;
+	typedef basic_fstream<TCHAR, char_traits<TCHAR> > tfstream;
+
+};
+
+
+#endif /* _CSTDTCHAR_ */
